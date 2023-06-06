@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:EditorVisibility"
+             xmlns:dataForm="clr-namespace:Syncfusion.Maui.DataForm;assembly=Syncfusion.Maui.DataForm"
+             x:Class="EditorVisibility.MainPage">
+    
+    <ContentPage.BindingContext>
+        <local:DataFormViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Behaviors>
+        <local:DataFormBehavior/>
+    </ContentPage.Behaviors>
+    <ContentPage.Content>
+        <dataForm:SfDataForm x:Name="dataForm" ValidationMode="PropertyChanged"/>
+    </ContentPage.Content>
+    
+</ContentPage>
